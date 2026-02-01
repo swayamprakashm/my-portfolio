@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-[#f0f0f3] dark:bg-[#121212] text-gray-900 dark:text-white transition-colors duration-300;
+}
+
+.neumorphic {
+  @apply rounded-3xl shadow-[inset_8px_8px_16px_#d1d9e6,inset_-8px_-8px_16px_#ffffff] dark:shadow-[inset_8px_8px_16px_#141414,inset_-8px_-8px_16px_#1f1f1f];
+}
