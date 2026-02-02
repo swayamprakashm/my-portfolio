@@ -16,10 +16,10 @@ export default function Contact() {
 
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_gbu9e1t",
+        "template_w3n0l20",
         form.current,
-        "YOUR_PUBLIC_KEY"
+        "vJkyg_JaQ7kcczws8"
       )
       .then(() => {
         setSubmitted(true);
