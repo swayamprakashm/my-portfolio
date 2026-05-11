@@ -1,13 +1,24 @@
 import { FaQuoteLeft } from "react-icons/fa";
 import { motion } from "framer-motion";
 
+/* IMPORT IMAGES */
+import pic1 from "../assets/journey/pic1.jpg";
+import pandemic from "../assets/journey/p.png";
+import pic2 from "../assets/journey/pic2.jpg";
+import p2 from "../assets/journey/p2.png";
+import p3 from "../assets/journey/p3.png";
+import square from "../assets/journey/Square.jpg";
+import p4 from "../assets/journey/p4.png";
+import p5 from "../assets/journey/p5.png";
+import future from "../assets/journey/future.jpg";
+
 const timelineData = [
   {
     year: "2019",
     title: "Started Diploma in CSE",
     description:
       "Began my journey in computer science at Arjun College of Technology & Science.",
-    img: "/src/assets/journey/pic1.jpg",
+    img: pic1,
     quote: "Every expert was once a beginner. 🌱",
   },
   {
@@ -15,7 +26,7 @@ const timelineData = [
     title: "Survived Pandemic Year",
     description:
       "Adapted to online learning and honed self-discipline skills and maintaining healthy habits in isolation.",
-    img: "/src/assets/journey/p.png",
+    img: pandemic,
     quote: "health is wealth. 🧘‍♂️",
   },
   {
@@ -23,7 +34,7 @@ const timelineData = [
     title: "Graduated Diploma",
     description:
       "Completed my diploma with a focus on OOP, Python, C, and Web basics.",
-    img: "/src/assets/journey/pic2.jpg",
+    img: pic2,
     quote: "Dream big, work hard, and never stop learning. 🚀",
   },
   {
@@ -31,7 +42,7 @@ const timelineData = [
     title: "Got break in Career",
     description:
       "Searching for job roles and internships to kickstart my tech career.",
-    img: "/src/assets/journey/p2.png",
+    img: p2,
     quote: "Opportunities don't happen, you create them. 💡",
   },
   {
@@ -39,7 +50,7 @@ const timelineData = [
     title: "Failed to get job role and got a major health issue",
     description:
       "Started B.Tech in Computer Science at ACE Engineering College.",
-    img: "/src/assets/journey/p3.png",
+    img: p3,
     quote: "Tough times never last, but tough people do. 💪",
   },
   {
@@ -47,7 +58,7 @@ const timelineData = [
     title: "Focused on Career and Joined B.Tech CSE",
     description:
       "Started B.Tech in Computer Science at ACE Engineering College.",
-    img: "/src/assets/journey/Square.jpg",
+    img: square,
     quote: "The future belongs to those who code it. 💻",
   },
   {
@@ -55,7 +66,7 @@ const timelineData = [
     title: "Going to 3rd Year of B.Tech",
     description:
       "Continuing my studies with a focus on AI, NLP, and full-stack development.",
-    img: "/src/assets/journey/p4.png",
+    img: p4,
     quote: "Learning never exhausts the mind. 📚",
   },
   {
@@ -63,7 +74,7 @@ const timelineData = [
     title: "Got internship at AppProTech Solutions as a MERN Stack Developer",
     description:
       "Excited to apply my skills in real-world projects and continue growing as a developer.",
-    img: "/src/assets/journey/p5.png",
+    img: p5,
     quote: "The best way to predict the future is to invent it. 🌟",
   },
   {
@@ -71,8 +82,9 @@ const timelineData = [
     title: "Waiting for Opportunities",
     description:
       "Looking forward to new challenges and opportunities in the tech world.",
-    img: "/src/assets/journey/future.jpg",
-    quote: "Success is not the key to happiness. Happiness is the key to success. 🔑",
+    img: future,
+    quote:
+      "Success is not the key to happiness. Happiness is the key to success. 🔑",
   },
 ];
 
@@ -80,15 +92,15 @@ export default function Journey() {
   return (
     <section className="relative py-24 px-6">
       <motion.h2
-  className="text-3xl md:text-4xl font-bold text-center mb-24"
-  initial={{ opacity: 0, scale: 0.95, filter: "blur(8px)" }}
-  whileInView={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
-  transition={{ duration: 0.8, ease: "easeOut" }}
-  viewport={{ once: true }}
->
-  🙋🏼 My Journey
-</motion.h2>
-
+        className="text-3xl md:text-4xl font-bold text-center mb-24
+                   text-gray-900 dark:text-white"
+        initial={{ opacity: 0, scale: 0.95, filter: "blur(8px)" }}
+        whileInView={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+      >
+        🙋🏼 My Journey
+      </motion.h2>
 
       <div className="relative max-w-6xl mx-auto">
         {/* Animated Wavy Line */}
@@ -139,7 +151,7 @@ export default function Journey() {
                   src={item.img}
                   alt={`${item.title} image`}
                   loading="lazy"
-                  className="w-full h-auto object-contain"
+                  className="w-full h-auto object-cover"
                 />
               </motion.div>
 
@@ -153,8 +165,10 @@ export default function Journey() {
                            dark:shadow-[8px_8px_16px_#121212,-8px_-8px_16px_#1f1f1f]"
               >
                 {/* Year Badge */}
-                <span className="absolute -top-4 -left-4 bg-indigo-600 text-white 
-                                 px-3 py-1 rounded-xl text-sm shadow-lg">
+                <span
+                  className="absolute -top-4 -left-4 bg-indigo-600 text-white 
+                             px-3 py-1 rounded-xl text-sm shadow-lg"
+                >
                   {item.year}
                 </span>
 

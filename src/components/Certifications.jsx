@@ -1,3 +1,4 @@
+// src/components/Certifications.jsx
 import { motion } from "framer-motion";
 import { FaExternalLinkAlt } from "react-icons/fa";
 

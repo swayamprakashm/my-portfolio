@@ -1,7 +1,7 @@
 // src/components/Sidebar.jsx
 import { FaFacebook, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
-import profile from "../assets/profile.jpg";
+import profile from "../assets/profile.png";
 
 export default function Sidebar() {
   return (
@@ -26,7 +26,7 @@ export default function Sidebar() {
       <motion.img
         src={profile}
         alt="Swayam Prakash Macharla"
-        className="w-32 h-32 rounded-full object-cover mb-4"
+        className="w-32 h-32 rounded-full mb-4 object-cover shadow-lg"
         initial={{ scale: 0.9, opacity: 0 }}
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.6 }}

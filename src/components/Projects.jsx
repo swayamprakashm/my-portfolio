@@ -1,45 +1,51 @@
+// src/components/Projects.jsx
 import { motion } from "framer-motion";
 
 export default function Projects() {
   const projects = [
-    {
-      name: "Rescue Now App",
-      image: "/RNlogo.png",
-      details: "A real-time emergency alert system using GPS and SMS services.",
-      link: "https://github.com/swayamprakashm/RescueNowApp.git",
-    },
-    {
-      name: "Name Initials Generator",
-      image: "/NGlogo.png",
-      details:
-        "A simple Flask web app that takes a user's full name and generates their initials. Example: Macharla Swayam Prakash → M.S.P.",
-      link: "https://github.com/swayamprakashm/name-initials-generator.git",
-    },
-    {
-      name: "Resume Builder",
-      image: "/RBlogo.png",
-      details: "React-based resume builder with Word export.",
-      link: "https://github.com/swayamprakashm/online-resume-builder.git",
-    },
-    {
-      name: "blood Donation System",
-      image: "/bd.png",
-      details: "Python-based built that manages blood donors data.",
-      link: "https://github.com/swayamprakashm/blood-donation-system.git",
-    },
-    {
-      name: "Diabetes App",
-      image: "/da.png",
-      details: "A machine learning app that predicts diabetes.",
-      link: "https://github.com/swayamprakashm/diabetes-app.git"
-    },
-    {
-      name: "Age Calculator",
-      image: "/age.png",
-      details: "A simple web app that calculates age from date of birth.",
-      link: "https://github.com/swayamprakashm/Age-Calculator.git"
-    }
-  ];
+  {
+    name: "AppOrbit",
+    image: "/AO.png", // Ensure this exists in your public folder
+    details: "A comprehensive mobile usage tracker featuring robust parental controls and real-time monitoring.",
+    link: "https://github.com/swayamprakashm/AppOrbit", // Update with your actual repo link
+    tags: ["React Native", "Firebase", "Node.js"]
+  },
+  {
+    name: "Rescue Now App",
+    image: "/RNlogo.png",
+    details: "A real-time emergency alert system using GPS and SMS services for immediate assistance.",
+    link: "https://github.com/swayamprakashm/RescueNowApp.git",
+    tags: ["Android", "Java", "Firebase"]
+  },
+  {
+    name: "Name Initials Generator",
+    image: "/NGlogo.png",
+    details: "A Flask web app that generates clean initials from full names. Example: Macharla Swayam Prakash → M.S.P.",
+    link: "https://github.com/swayamprakashm/name-initials-generator.git",
+    tags: ["Python", "Flask", "Tailwind"]
+  },
+  {
+    name: "Resume Builder",
+    image: "/RBlogo.png",
+    details: "React-based platform with dynamic templates and Word document export functionality.",
+    link: "https://github.com/swayamprakashm/online-resume-builder.git",
+    tags: ["React.js", "Context API", "Docx.js"]
+  },
+  {
+    name: "Diabetes app",
+    image: "/da.png",
+    details: "Machine Learning application that analyzes health metrics to predict diabetes risk factors.",
+    link: "https://github.com/swayamprakashm/diabetes-app.git",
+    tags: ["Machine Learning", "Python", "Streamlit"]
+  },
+  {
+    name: "Blood Donation System",
+    image: "/bd.png",
+    details: "A Python-based management system for organizing donor databases and blood availability.",
+    link: "https://github.com/swayamprakashm/blood-donation-system.git",
+    tags: ["Python", "SQLite", "Tkinter"]
+  }
+];
 
   return (
     <motion.section
