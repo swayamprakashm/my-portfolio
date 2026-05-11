@@ -26,7 +26,11 @@ export default function Sidebar() {
       <motion.img
         src={profile}
         alt="Swayam Prakash Macharla"
-        className="w-32 h-32 rounded-full mb-4 object-cover shadow-lg"
+        className="
+          w-40 h-40 mb-4
+          object-contain
+          drop-shadow-xl
+        "
         initial={{ scale: 0.9, opacity: 0 }}
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.6 }}
